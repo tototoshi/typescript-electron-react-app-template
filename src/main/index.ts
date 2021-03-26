@@ -1,14 +1,11 @@
+import path from "path";
 import electron from "electron";
 import { getMessage } from "./message";
-try {
-  require("electron-reloader")(module);
-} catch {}
 
 const createWindow = () => {
   const win = new electron.BrowserWindow({
     webPreferences: {
-      nodeIntegration: true,
-      contextIsolation: false,
+      preload: path.resolve(__dirname, "../preload/bundle.js"),
     },
   });
 
@@ -17,7 +14,9 @@ const createWindow = () => {
     electron.shell.openExternal(url);
   });
 
-  console.log(`${getMessage()} from main process`);
+  electron.ipcMain.handle("get-message", async () => {
+    return `${getMessage()} from the main process`;
+  });
 
   win.loadFile("index.html");
 };

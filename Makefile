@@ -15,10 +15,12 @@ run:
 	@npx electron .
 build:
 	@npx tsc --project tsconfig.main.json
-	@npx webpack
+	@npx webpack --config webpack.preload.config.js
+	@npx webpack --config webpack.renderer.config.js
 watch:
 	(npx tsc --project tsconfig.main.json -w &) &&\
-	(npx webpack -w)
+	(npx webpack --config webpack.preload.config.js -w &) &&\
+	(npx webpack --config webpack.renderer.config.js -w &)
 fmt:
 	@npx prettier . --write
 install:

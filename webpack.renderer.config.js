@@ -4,7 +4,7 @@ const ForkTsCheckerWebpackPlugin = require("fork-ts-checker-webpack-plugin");
 const isDevelopment = process.env.NODE_ENV !== "production";
 
 module.exports = {
-  target: isDevelopment ? "electron-renderer" : "browserslist",
+  target: "web",
   mode: isDevelopment ? "development" : "production",
   entry: "./src/renderer/index.tsx",
   output: {

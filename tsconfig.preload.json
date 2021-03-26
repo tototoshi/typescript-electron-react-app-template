@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "module": "es6",
+    "module": "CommonJS",
     // Ensure that .d.ts files are created by tsc, but not .js files
     "declaration": true,
     "emitDeclarationOnly": true,
@@ -8,8 +8,7 @@
     "isolatedModules": true,
     "strict": true,
     "esModuleInterop": true,
-    "jsx": "react",
     "outDir": "dist"
   },
-  "include": ["src/renderer"]
+  "include": ["src/preload"]
 }

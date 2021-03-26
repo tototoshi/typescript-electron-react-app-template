@@ -3,5 +3,6 @@
 ## How to run
 
 ```console
-$ make all
+$ make build
+$ make run
 ```

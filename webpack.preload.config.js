@@ -30,7 +30,7 @@ module.exports = {
   plugins: [
     new ForkTsCheckerWebpackPlugin({
       typescript: {
-        configFile: "tsconfig.renderer.json",
+        configFile: "tsconfig.preload.json",
       },
     }),
   ],

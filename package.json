@@ -8,7 +8,7 @@
     "dist"
   ],
   "dependencies": {
-    "electron": "^15.2.0",
+    "electron": "^15.3.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
   },
@@ -19,12 +19,12 @@
     "@babel/preset-typescript": "^7.15.0",
     "@types/electron": "^1.6.10",
     "@types/jest": "^27.0.2",
-    "@types/node": "^16.11.4",
+    "@types/node": "^16.11.7",
     "@types/react": "^17.0.30",
     "@types/react-dom": "^17.0.9",
     "@types/react-router-dom": "^5.3.1",
     "babel-loader": "^8.2.3",
-    "css-loader": "^6.4.0",
+    "css-loader": "^6.5.1",
     "fork-ts-checker-webpack-plugin": "^6.4.0",
     "jest": "^27.3.0",
     "prettier": "^2.4.1",

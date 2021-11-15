@@ -24,7 +24,7 @@
     "@types/react-dom": "^17.0.9",
     "@types/react-router-dom": "^5.3.1",
     "babel-loader": "^8.2.3",
-    "css-loader": "^6.4.0",
+    "css-loader": "^6.5.1",
     "fork-ts-checker-webpack-plugin": "^6.4.0",
     "jest": "^27.3.0",
     "prettier": "^2.4.1",

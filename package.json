@@ -8,7 +8,7 @@
     "dist"
   ],
   "dependencies": {
-    "electron": "^17.1.0",
+    "electron": "^18.0.1",
     "react": "^18.0.0",
     "react-dom": "^18.0.0"
   },
